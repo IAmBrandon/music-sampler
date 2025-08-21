@@ -1,0 +1,41 @@
+body {
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.sampler-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.sampler-button {
+    background-color: #61afef;
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out, background-color 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sampler-button:hover {
+    background-color: #56a0e0;
+    transform: translateY(-2px);
+}
+
+.sampler-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
